@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <title>DashBoard</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="head">
+            <h2>Dashbord</h2>
+            <p>these are last operations</p>
+        </div>
+
+
+        <div class="inputs">
+
+            <input placeholder="title" type="text" id="title" required>
+            <div class = "price-box">
+                <input onkeyup="getTotal()" placeholder="price" type="number" id="price" required>
+                <input onkeyup="getTotal()" placeholder="taxes" type="number" id="taxes">
+                <input onkeyup="getTotal()" placeholder="ads" type="number" id="ads">
+                <input onkeyup="getTotal()" placeholder="discount" type="number" id="discount">
+                <small id = "total"></small>
+            </div>
+            <input placeholder="count" type="number" id="count" required>
+            <input placeholder="category" type="text" id="category" required>
+            <button id="create">Create</button>
+
+        </div>
+
+
+
+        <div class="outputs">
+
+            <div class="search-box">
+                <input placeholder="search" type="text" id="search">
+                <div class = "search-btn">
+                    <button id = "searchByTitle">search by title</button>
+                    <button id = "searchByCategory">search by category</button>
+                </div>
+    
+    
+            </div>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>tilte</th>
+                    <th>price</th>
+                    <th>faxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th id ="update">update</th>
+                    <th id = "delete">delete</th>
+                </tr>
+                <tbody id = "tbody">
+                    
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>

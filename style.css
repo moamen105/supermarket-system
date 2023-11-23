@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #222;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.head{
+    text-align: center;
+    margin: 20px 0;
+    text-transform: capitalize;
+    color: white;
+}
+
+.head h2{
+    margin-bottom: 7px;
+}
+
+
+.inputs input, .search-box input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #111;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.inputs input:focus , .search-box input:focus{
+    transform: scale(1.1);
+    background-color: #000;
+}
+
+.price-box input{
+    width: 19%;
+    margin: 0 15px 0 0;
+}
+
+#total{
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+#total::before{
+    content: "total: ";
+}
+
+.inputs button , .search-btn button{
+    width: 100%;
+    font-size: 15px;
+    height: 40px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #2306a4;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.inputs button:hover ,.search-btn button:hover{
+    background-color: #140265;
+    letter-spacing: 1px;
+}
+
+.search-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-btn button {
+    width: 45%;
+}
+
+table{
+    width: 100%;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+table th{
+    text-transform: uppercase;
+}
+
+table button{
+    background-color: #2306a4;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    flex-wrap: nowrap;
+}
+table button:hover{
+    background-color: #140265;
+}
+th,td{
+    padding: 10px;
+}
+
